@@ -13,7 +13,7 @@ do {
 System.out.println("--- MENU DE OPCIONES ---");
 System.out.println("1. Cambio de unidades de horas a segundos.");
 System.out.println("2. Cambio de unidades de kilómetros a metros.");
-System.out.println("3. Cambio de km/h a m/s.");
+
 System.out.println("4. Salir");
 System.out.println("Escribe una de las opciones");
 int opcion = teclado.nextInt();
@@ -30,12 +30,7 @@ int km = teclado.nextInt();
 int m = km * 1000;
 System.out.println(km + " km son " + m + " metros.");
 break;
-case 3:
-System.out.println("Introduce los km/h");
-double kmh = teclado.nextDouble();
-double ms = kmh / 3.6;
-System.out.println(kmh + "km/h son " + ms + " m/s.");
-break;
+
 case 4:
 salir = true;
 break;
